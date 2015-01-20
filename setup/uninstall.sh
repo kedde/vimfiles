@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd ..
+
 if [[ -e $HOME/.vimrc || -e $HOME/.vim ]]; then
 
   # asking for confirmation

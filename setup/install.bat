@@ -1,5 +1,6 @@
 @echo off
 
+cd ..
 setlocal
 
 :checkMain
@@ -68,4 +69,7 @@ vim +PluginInstall +qall
 
 :end
 echo Done
+
+pause
 endlocal
+

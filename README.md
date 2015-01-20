@@ -8,7 +8,7 @@ My portable vim configuration
 
 ```
 git clone https://github.com/lyphtec/vimfiles.git ~/.vimfiles
-cd ~/.vimfiles
+cd ~/.vimfiles/setup
 ./install.sh
 ```
 
@@ -16,9 +16,9 @@ cd ~/.vimfiles
 
 ```
 cd ~
-git clone https://github.com/lyphtec/vimfiles.git
-cd vimfiles
-.\install.bat
+git clone git@github.com:kedde/vimfiles.git
+cd vimfiles\setup
+.setup\install.bat
 ```
 Note: The Windows install uses ln.exe from (Git install) to create a hard link to the config file from %HOME%\vimfiles\vimrc to
 %HOME%\_vimrc and also the other Windows specific files (_gvimrc & _vsvimrc). This is because symbolic linking (ln -s) doesn't work
@@ -27,9 +27,9 @@ hard link.  To actually create a symbolic link on Windows, you can do the follow
 priviledges:
 
 ```
-C:\Users\John>mklink _vimrc .\vimfiles\vimrc
-C:\Users\John>mklink _gvimrc .\vimfiles\_gvimrc
-C:\Users\John>mklink _vsvimrc .\vimfiles\_vsvimrc
+C:\Users\kedde>mklink _vimrc .\vimfiles\vimrc
+C:\Users\kedde>mklink _gvimrc .\vimfiles\_gvimrc
+C:\Users\kedde>mklink _vsvimrc .\vimfiles\_vsvimrc
 ```
 
 ## Uninstall
@@ -45,8 +45,9 @@ cd ~/.vimfiles
 
 ```
 cd ~
-.\vimfiles\uninstall.bat
+.\vimfiles\setup\uninstall.bat
 ```
 
 ## Inspired by
  - https://github.com/fsproru/vimfiles
+ - https://github.com/lyphtec/vimfiles
