@@ -13,6 +13,17 @@ set nocompatible            " iMproved!
 set encoding=utf-8
 filetype off
 
+if has('win32') || has('win64')
+    " change to powershell 
+    set shell=powershell.exe\ -ExecutionPolicy\ Unrestricted 
+"    set shellcmdflag=-Command 
+    set shellcmdflag=/c\ chcp\ 65001\ &&\ powershell.exe\ -NoLogo\ -NoProfile\ -NonInteractive\ -ExecutionPolicy\ RemoteSigned
+    set shellquote=\"
+    set shellxquote= 
+    set shellpipe=> 
+    set shellredir=>
+endif
+
 " Vundle stuff
 if has('win32') || has('win64')
   set rtp+=~/vimfiles/bundle/vundle/
