@@ -7,9 +7,9 @@ My portable vim configuration
 #### Linux/Mac:
 
 ```
-git clone https://github.com/lyphtec/vimfiles.git ~/.vimfiles
+git clone git@github.com:kedde/vimfiles.git ~/.vimfiles
 cd ~/.vimfiles/setup
-./install.sh
+./install.sh or bash install.sh
 ```
 
 #### Windows (from Powershell prompt):
