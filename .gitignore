@@ -4,3 +4,5 @@ Thumbs.db
 Desktop.ini
 bundle/*
 !bundle/vundle
+*.swp
+*.swo
