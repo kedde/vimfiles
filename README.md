@@ -18,7 +18,7 @@ cd ~/.vimfiles/setup
 cd ~
 git clone git@github.com:kedde/vimfiles.git
 cd vimfiles\setup
-.setup\install.bat
+.\install.bat
 ```
 Note: The Windows install uses ln.exe from (Git install) to create a hard link to the config file from %HOME%\vimfiles\vimrc to
 %HOME%\_vimrc and also the other Windows specific files (_gvimrc & _vsvimrc). This is because symbolic linking (ln -s) doesn't work
